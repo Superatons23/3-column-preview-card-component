@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+:root {
+  /*PRIMARY*/
+  --bright-orange-primary: hsl(31, 77%, 52%);
+  --dark-cyan-primary: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /*NEUTRAL*/
+  --transparent-white-neutral: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray-neutral: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  min-height: 100vh;
+  background-color: var(--very-light-gray-neutral);
+  display: grid;
+}
+.container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: var(--bright-orange-primary);
+}
+/*CARDS*/
+.card {
+  border-radius: 0px;
+}
+.card-body {
+  padding: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.orange {
+  background-color: var(--bright-orange-primary);
+}
+.cyan {
+  background-color: var(--dark-cyan-primary);
+}
+.cyan-dark {
+  background-color: var(--very-dark-cyan);
+}
+
+/*buttons*/
+.btn-cyan:hover {
+  background-color: var(--dark-cyan-primary);
+  text-decoration: none;
+  color: var(--very-light-gray-neutral);
+  border: 2px solid var(--very-light-gray-neutral);
+}
+
+.btn-cyan {
+  color: var(--dark-cyan-primary);
+}
+
+.btn-orange:hover {
+  background-color: var(--bright-orange-primary);
+  text-decoration: none;
+  color: var(--very-light-gray-neutral);
+  border: 2px solid var(--very-light-gray-neutral);
+}
+.btn-orange {
+  color: var(--bright-orange-primary);
+}
+.btn-cyan-dark:hover {
+  background-color: var(--very-dark-cyan);
+  text-decoration: none;
+  color: var(--very-light-gray-neutral);
+  border: 2px solid var(--very-light-gray-neutral);
+}
+.btn-cyan-dark {
+  color: var(--very-dark-cyan);
+}
+.btn-learn-more {
+  background-color: var(--very-light-gray-neutral);
+  border-radius: 2rem;
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+/*TEXT*/
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--very-light-gray-neutral);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.card-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--transparent-white-neutral);
+  line-height: 1.5;
+}
+.btn-card {
+  margin-top: 1.8rem;
+}
+
+/*MEDIAA*/
+@media (min-width: 825px) {
+  .cars-card {
+    display: flex;
+
+    flex-direction: row;
+  }
+  .card-text {
+    margin-bottom: 5.5rem;
+  }
+}
